@@ -1,0 +1,11 @@
+@mixin centerText {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin centerColumnVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
