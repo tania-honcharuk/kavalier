@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener } from "@angular/core";
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  email = 'reception@kavalier.com.ua'
+  mailText: string = '';
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  mailMe() {
+    this.mailText =
+      'mailto:abc@abc.com?subject=files&body=' + this.email;
+    window.location.href = this.mailText;
   }
 
 }

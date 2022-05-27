@@ -1,0 +1,21 @@
+<div class="block-wrap">
+  <div class="card" *ngFor="let card of blog">
+    <div class="card__img-block">
+      <img class="card__img" src="{{card.img}}" alt="">
+    </div>
+    <div class="card__info">
+      <div class="card__date-block">
+        <span class="card__date">{{card.date | date: 'longDate' }} / in <span class="app-a">{{card.section}}</span></span>
+      </div>
+      <div class="card__title-block">
+        <h2 class="card__title">{{card.title}}</h2>
+      </div>
+      <div class="card__text-block">
+        <span class="card__text">{{card.text}}</span>
+      </div>
+      <div class="card__button-block">
+        <a class="card__link app-a" href="#">READ MORE</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+@import "../../../styles";
+
+.block-wrap {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  width: 23%;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    right: 10%;
+    height: 100%;
+  }
+  &::before {
+    border-top: 1px solid $base-light;
+    border-bottom: 1px solid $secondary;
+   }
+   &::after {
+    border-left: 1px solid $secondary;
+    border-right: 1px solid $secondary;
+    border-image: linear-gradient(to bottom, $base-light 91%, $secondary) 1;
+   }
+   &__info {
+     height: 300px;
+     background: $base-light;
+     padding: 0 10%;
+   }
+}
+
+img {
+  width: 100%;
+  height: 350px;
+}

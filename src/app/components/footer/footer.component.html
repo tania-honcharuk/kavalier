@@ -2,7 +2,28 @@
   <div class="footer__top">
     <div class="footer__column">
       <h4 class="footer__title">Contact</h4>
-
+      <div class="footer__navigation">
+        <div class="footer__contact contact">
+          <span class="contact__title">Address:</span>
+          <span class="contact__text">Lviv, vul.Staroznesenska, 70</span>
+        </div>
+        <div class="footer__contact contact">
+          <span class="contact__title">Phone:</span>
+          <div class="contact__block">
+            <span class="contact__text">+38 (032) 242-3999</span>
+            <br>
+            <span class="contact__text">+38 (093) 170-4545</span>
+          </div>
+        </div>
+        <div class="footer__contact contact">
+          <span class="contact__title">Social:</span>
+          <app-social-networks></app-social-networks>
+        </div>
+        <div class="footer__contact contact">
+          <span class="contact__title">Email:</span>
+          <span class="app-a" (click)="mailMe()">{{ email }}</span>
+        </div>
+      </div>
     </div>
 
     <div class="footer__column">
@@ -15,7 +36,7 @@
       </div>
     </div>
 
-    <div class="footer__column">
+    <div class="footer__column footer__hidden">
       <h4 class="footer__title">Things to do</h4>
       <div class="footer__navigation">
         <a class="footer__link app-a" href="#">Tennis Club</a>
@@ -26,7 +47,7 @@
       </div>
     </div>
 
-    <div class="footer__column">
+    <div class="footer__column footer__hidden">
       <h4 class="footer__title">Rooms & Suits</h4>
       <div class="footer__navigation">
         <a class="footer__link app-a" href="#">Classic</a>
