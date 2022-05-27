@@ -34,5 +34,13 @@
 
 img {
   width: 100%;
-  height: 350px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    &__title {
+      font-size: 18px;
+    }
+  }
 }

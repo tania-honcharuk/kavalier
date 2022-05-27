@@ -1,0 +1,17 @@
+.card__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: $base-dark;
+}
+
+@media (max-width: 1440px) {
+  .card__title{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card__title{
+    font-size: 18px;
+  }
+}

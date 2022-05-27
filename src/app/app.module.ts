@@ -9,9 +9,7 @@ import { AppComponent } from './app.component';
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SectionTitleComponent } from './shared/section-title/section-title.component';
 import { SectionSubtitleComponent } from './shared/section-subtitle/section-subtitle.component';
-import { LanguageComponent } from './shared/language/language.component';
 import { SocialNetworksComponent } from './shared/social-networks/social-networks.component';
 import { BlogCardComponent } from './shared/blog-card/blog-card.component';
 
@@ -20,11 +18,9 @@ import { BlogCardComponent } from './shared/blog-card/blog-card.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    SectionTitleComponent,
     SectionSubtitleComponent,
-    LanguageComponent,
     SocialNetworksComponent,
-    BlogCardComponent
+    BlogCardComponent,
   ],
   imports: [
     BrowserModule,
