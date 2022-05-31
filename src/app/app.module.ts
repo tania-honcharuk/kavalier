@@ -9,18 +9,24 @@ import { AppComponent } from './app.component';
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SectionSubtitleComponent } from './shared/section-subtitle/section-subtitle.component';
 import { SocialNetworksComponent } from './shared/social-networks/social-networks.component';
-import { BlogCardComponent } from './shared/blog-card/blog-card.component';
+import { CardComponent } from './shared/card/card.component';
+import { InfoCardComponent } from './shared/info-card/info-card.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { MainComponent } from './pages/main/main.component';
+import { AdvantagesComponent } from './components/advantages/advantages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    SectionSubtitleComponent,
     SocialNetworksComponent,
-    BlogCardComponent,
+    CardComponent,
+    InfoCardComponent,
+    BlogComponent,
+    MainComponent,
+    AdvantagesComponent,
   ],
   imports: [
     BrowserModule,

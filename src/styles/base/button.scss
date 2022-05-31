@@ -1,0 +1,24 @@
+.app-button {
+  border: 1px solid $primary;
+  background: $primary;
+  color: $base-light;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+  &:hover {
+    background: $base-light;
+    color: $primary;
+  }
+
+  &--secondary {
+    border: 1px solid $secondary;
+    background: $secondary;
+    &:hover {
+      background: $base-light;
+      color: $secondary;
+    }
+  }
+}

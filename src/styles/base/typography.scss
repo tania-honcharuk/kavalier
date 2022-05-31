@@ -44,3 +44,23 @@ p {
   font-weight: 400;
   display: block;
 }
+
+@media (max-width: 1440px) {
+  h1, .h1 {
+    font-size: 36px;
+  }
+  
+  h4, .h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1, .h1 {
+    font-size: 18px;
+  }
+
+  h4, .h4 {
+    font-size: 12px;
+  }
+}

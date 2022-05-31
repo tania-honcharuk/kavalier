@@ -2,6 +2,7 @@
   color: $primary;
   transition: 0.25s;
   cursor: pointer;
+  letter-spacing: 0.75px;
   
   &:hover {
     color: $primary-dark;
@@ -9,5 +10,17 @@
 
   &--active {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 1440px) {
+  .app-a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app-a {
+    font-size: 12px;
   }
 }

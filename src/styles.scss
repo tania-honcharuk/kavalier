@@ -36,3 +36,6 @@ $kavalier-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 @import "styles/main";
+ body {
+   height: 100%;
+ }

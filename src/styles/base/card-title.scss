@@ -4,14 +4,20 @@
   color: $base-dark;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1645px) {
   .card__title{
     font-size: 24px;
   }
 }
 
-@media (max-width: 1024px) {
+// @media (max-width: 1440px) {
+//   .card__title{
+//     font-size: 24px;
+//   }
+// }
+
+@media (max-width: 1098px) {
   .card__title{
-    font-size: 18px;
+    font-size: $base-font-size;
   }
 }

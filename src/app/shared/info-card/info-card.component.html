@@ -1,0 +1,19 @@
+<div class="info" *ngFor="let info of info">
+  <div class="info__wrap"
+  [class.row]="info.row === 'row'"
+  [class.row-reverse]="info.row === 'reverse'"
+  >
+    <div class="info__block">
+      <h1 class="info__title">{{info.title}}</h1>
+      <span class="info__text">{{info.text}}</span>
+      <div class="info__button">
+        <button class="app-button info__details--hidden" *ngIf="!info.detailsBtn">DETAILS</button>
+        <button class="app-button info__details--active" *ngIf="info.detailsBtn">DETAILS</button>
+        <button class="app-button">BOOK NOW</button>
+      </div>
+    </div>
+    <div class="info__img-block">esdfghjklfxcgvhbjnkm,dfghjk
+      <img class="info__img" src="" alt="">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+@import "../mixins";
+
+.section__subtitle {
+  height: 52px;
+  letter-spacing: 0.75px;
+  color: $primary;
+  @include centerText;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  .section__subtitle {
+    height: 26px;
+  }
+}

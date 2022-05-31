@@ -1,0 +1,15 @@
+<div class="advantages__wrap">
+  <div class="advantages__header">
+    <h4 class="section__subtitle">Why Choose Kavalier Hotel</h4>
+    <h1 class="section__title advantages__title">The Advateges</h1>
+  </div>
+  <div class="advantages__bottom">
+    <div class="advantages__item" *ngFor="let advantage of advantages">
+      <img class="item__icon" src="/assets/images/icons/{{ advantage.icon }}-adv.svg" alt="icon">
+      <div class="item__info">
+        <span class="info__title">{{ advantage.title }}</span>
+        <span class="info__text">{{ advantage.text }}</span>
+      </div>
+    </div>
+  </div>
+</div>

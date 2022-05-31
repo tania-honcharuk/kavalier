@@ -1,9 +1,14 @@
 .card__text {
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.25px;
   color: $secondary;
+}
+
+@media (max-width: 1680px) {
+  .card__text{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1440px) {
