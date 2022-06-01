@@ -1,19 +1,26 @@
-<div class="info" *ngFor="let info of info">
-  <div class="info__wrap"
+<div class="info__wrap"
+  *ngFor="let info of rooms"
   [class.row]="info.row === 'row'"
   [class.row-reverse]="info.row === 'reverse'"
-  >
-    <div class="info__block">
+>
+  <div class="info__block">
+    <div class="info__block-wrap">
       <h1 class="info__title">{{info.title}}</h1>
-      <span class="info__text">{{info.text}}</span>
+      <div class="info__text-wrap">
+        <p class="info__text" *ngFor="let p of info.text">{{p}}</p>
+      </div>
       <div class="info__button">
-        <button class="app-button info__details--hidden" *ngIf="!info.detailsBtn">DETAILS</button>
-        <button class="app-button info__details--active" *ngIf="info.detailsBtn">DETAILS</button>
-        <button class="app-button">BOOK NOW</button>
+        <button class="app-button app-button--secondary info__details--hidden" *ngIf="!info.detailsBtn">DETAILS</button>
+        <button class="app-button app-button--secondary info__details--active" *ngIf="info.detailsBtn">DETAILS</button>
+        <button class="app-button app-button--secondary-btn">BOOK NOW</button>
       </div>
     </div>
-    <div class="info__img-block">esdfghjklfxcgvhbjnkm,dfghjk
-      <img class="info__img" src="" alt="">
-    </div>
+  </div>
+  <div class="info__img-block">
+    <app-gallery-button
+    [class.left]="info.row === 'row'"
+    [class.right]="info.row === 'reverse'"
+    ></app-gallery-button>
+    <img class="info__img" src="{{info.image}}" alt="{{ info.title }} Room">
   </div>
 </div>

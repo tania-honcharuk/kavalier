@@ -3,9 +3,10 @@ $base-dark: #000000;
 $base-text: #878787;
 
 $primary: #E4C280;
-$primary-light: lighter($primary, 30%);
+$primary-light: lighten($primary, 30%);
 $primary-dark: darken($primary, 30%);
 
 $secondary: #878787;
 $secondary-light: #F6F6F6;
 $secondary-dark: #222121;
+$secondary-btn: #7E766F;

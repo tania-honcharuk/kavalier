@@ -17,8 +17,15 @@
     border: 1px solid $secondary;
     background: $secondary;
     &:hover {
-      background: $base-light;
       color: $secondary;
+    }
+  }
+
+  &--secondary-btn {
+    border: 1px solid $secondary-btn;
+    background: $secondary-btn;
+    &:hover {
+      color: $secondary-btn;
     }
   }
 }
