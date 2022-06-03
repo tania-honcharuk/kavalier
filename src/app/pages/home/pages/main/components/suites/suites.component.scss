@@ -1,0 +1,53 @@
+@import "src/styles";
+
+.suites {
+  &__wrap {
+    width: 100%;
+    height: 1080px;
+    background:$secondary-light;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    margin-top: 38px;
+    &__link {
+      text-transform: uppercase;
+      margin: 0 13px;
+    }
+  }
+  &__info-wrap {
+    width: 85%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: $base-light;
+    display: flex;
+  }
+}
+
+.info {
+  &__img-block {
+    width: 53%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__about {
+    width: 47%;
+    height: 100%;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

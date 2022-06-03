@@ -9,6 +9,11 @@ const routes: Routes = [
         path: 'main',
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
       },
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'main/welcome'
+    }
     ]
   }
 ];

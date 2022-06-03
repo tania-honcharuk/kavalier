@@ -10,8 +10,10 @@
         <p class="info__text" *ngFor="let p of info.text">{{p}}</p>
       </div>
       <div class="info__button">
-        <button class="app-button app-button--secondary info__details--hidden" *ngIf="!info.detailsBtn">DETAILS</button>
-        <button class="app-button app-button--secondary info__details--active" *ngIf="info.detailsBtn">DETAILS</button>
+        <button class="app-button app-button--secondary info__details--hidden" *ngIf="!info.detailsBtn; else showBtn">DETAILS</button>
+        <ng-template #showBtn>
+          <button class="app-button app-button--secondary info__details--active">DETAILS</button>
+        </ng-template>
         <button class="app-button app-button--secondary-btn">BOOK NOW</button>
       </div>
     </div>

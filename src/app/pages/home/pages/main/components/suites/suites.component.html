@@ -1,0 +1,31 @@
+<div class="suites__wrap">
+  <div class="suites__header">
+    <h4 class="section__subtitle">The Pleasure of luxury</h4>
+    <h1 class="section__title">Rooms & Suites</h1>
+    <div class="suites__nav">
+        <p  class="app-a suites__nav-link"
+            *ngFor="let room of rooms; index as i"
+            (click)="onSelect(room)"
+            [class.active]="room === selectedRoom"
+        >{{room.title}}</p>
+    </div>
+  </div>
+  <div class="suites__info-wrap info" *ngIf="selectedRoom">
+    <div class="info__img-block">
+      <img  class="info__img" src="{{selectedRoom.image}}" alt="">
+    </div>
+    <div class="info__about">
+      <h1 class="info__title">{{selectedRoom.title}}</h1>
+      <div class="info__text-block">
+        <p class="info__text" *ngFor="let p of selectedRoom.text">{{p}}</p>
+      </div>
+      <div class="info__btn-block">
+        <button class="app-button app-button--secondary info__details--hidden" *ngIf="!selectedRoom.detailsBtn; else showBtn">DETAILS</button>
+        <ng-template #showBtn>
+          <button class="app-button app-button--secondary info__details--active">DETAILS</button>
+        </ng-template>
+        <button class="app-button">BOOK NOW</button>
+      </div>
+    </div>
+  </div>
+</div>

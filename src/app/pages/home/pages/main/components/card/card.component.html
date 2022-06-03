@@ -1,0 +1,13 @@
+<div class="card__wrap" *ngFor="let card of blog">
+  <div class="card__img-block">
+    <img class="card__img" src="{{ card.img }}" alt="blog image">
+  </div>
+  <div class="card__info">
+    <span class="card__date">{{ card.date | date: 'longDate' }} / in 
+      <span class="app-a">{{ card.section }}</span>
+    </span>
+    <h2 class="card__title">{{ card.title }}</h2>
+    <span class="card__text">{{ card.text }}</span>
+    <a class="card__link app-a" href="#">READ MORE</a>
+  </div>
+</div>
