@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HostListener } from "@angular/core";
+import { InfoCard, Rooms } from 'src/app/models/rooms';
 
 @Component({
   selector: 'app-footer',
@@ -10,6 +10,9 @@ export class FooterComponent implements OnInit {
 
   email = 'reception@kavalier.com.ua'
   mailText: string = '';
+  rooms = Rooms;
+  
+  selectedRoom: InfoCard = this.rooms[0];
 
   constructor() {
   }
@@ -23,4 +26,7 @@ export class FooterComponent implements OnInit {
     window.location.href = this.mailText;
   }
 
+  onSelect(room: InfoCard): void {
+    this.selectedRoom = room;
+  }
 }

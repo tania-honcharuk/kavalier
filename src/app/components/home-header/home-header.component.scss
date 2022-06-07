@@ -1,0 +1,76 @@
+@import 'src/styles';
+
+.home-header {
+  &__wrap {
+    width: 100%;
+    height: 200px;
+    background: $home-header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    color: $base-dark;
+    font-size: 48px;
+    &--white {
+      color: $base-light;
+    }
+  }
+
+  &__nav {
+    font-size: $base-font-size;
+    letter-spacing: 0.75px;
+  }
+
+  &__link {
+    color: $base-dark;
+    &--white {
+      color: $base-light;
+    }
+  }
+
+  &__section {
+    color: $base-text;
+  }
+}
+
+.gallery {
+  background-image: url('/assets/images/background/gallery-header.jpeg');
+  background-repeat: no-repeat;
+  background-position: center 31%;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .home-header {
+    &__wrap {
+      height: 125px;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__nav {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .home-header {
+    &__wrap {
+      height: 94px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__nav {
+      font-size: 12px;
+    }
+  }
+}

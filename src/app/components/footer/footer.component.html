@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__column">
-      <h4 class="footer__title">Contact</h4>
+      <h4 class="footer__title" routerLink="/home/contact">Contact</h4>
       <div class="footer__navigation">
         <div class="footer__contact contact">
           <span class="contact__title">Address:</span>
@@ -39,22 +39,24 @@
     <div class="footer__column footer__hidden">
       <h4 class="footer__title">Things to do</h4>
       <div class="footer__navigation">
-        <a class="footer__link app-a" href="#">Tennis Club</a>
-        <a class="footer__link app-a" href="#">Kavalier Beach Club</a>
-        <a class="footer__link app-a" href="#">Restaurant and Vinarium</a>
-        <a class="footer__link app-a" href="#">Excursions</a>
-        <a class="footer__link app-a" href="#">Events</a>
+        <a class="footer__link app-a" routerLink="home/entertainment">Tennis Club</a>
+        <a class="footer__link app-a" routerLink="home/beach">Kavalier Beach Club</a>
+        <a class="footer__link app-a" routerLink="home/vinarium">Restaurant and Vinarium</a>
+        <a class="footer__link app-a" routerLink="home/entertainment">Excursions</a>
+        <a class="footer__link app-a" routerLink="home/celebrations">Events</a>
       </div>
     </div>
 
     <div class="footer__column footer__hidden">
       <h4 class="footer__title">Rooms & Suits</h4>
       <div class="footer__navigation">
-        <a class="footer__link app-a" href="#">Classic</a>
-        <a class="footer__link app-a" href="#">Superior</a>
+        <a class="footer__link app-a"
+            *ngFor="let room of rooms"
+            routerLink="/room.title">{{room.title}}</a>
+        <!-- <a class="footer__link app-a" href="#">Superior</a>
         <a class="footer__link app-a" href="#">Family Superior</a>
         <a class="footer__link app-a" href="#">Semi-Suit</a>
-        <a class="footer__link app-a" href="#">Suit</a>
+        <a class="footer__link app-a" href="#">Suit</a> -->
       </div>
     </div>
   </div>

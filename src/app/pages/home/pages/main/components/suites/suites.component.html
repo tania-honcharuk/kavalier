@@ -6,7 +6,7 @@
         <p  class="app-a suites__nav-link"
             *ngFor="let room of rooms; index as i"
             (click)="onSelect(room)"
-            [class.active]="room === selectedRoom"
+            [class.app-a--active]="room === selectedRoom"
         >{{room.title}}</p>
     </div>
   </div>
@@ -22,7 +22,7 @@
       <div class="info__btn-block">
         <button class="app-button app-button--secondary info__details--hidden" *ngIf="!selectedRoom.detailsBtn; else showBtn">DETAILS</button>
         <ng-template #showBtn>
-          <button class="app-button app-button--secondary info__details--active">DETAILS</button>
+          <button class="app-button app-button--secondary info__details--active" (click)="details();">DETAILS</button>
         </ng-template>
         <button class="app-button">BOOK NOW</button>
       </div>

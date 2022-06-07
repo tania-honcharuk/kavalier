@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ROOMS } from './rooms';
 
 @Component({
   selector: 'app-rooms',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rooms.component.scss']
 })
 export class RoomsComponent implements OnInit {
+  title = "rooms & suites";
   
+  rooms = ROOMS;
+
   constructor() { }
 
   ngOnInit(): void {

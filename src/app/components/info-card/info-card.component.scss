@@ -1,4 +1,4 @@
-@import "../../../styles";
+@import "src/styles";
 
 .info {
   &__wrap {
@@ -133,7 +133,7 @@ app-gallery-button {
   
       &-wrap {
         width: 100%;
-        margin: 0 50px;
+        padding: 0 50px;
       }
     }
 
@@ -176,7 +176,8 @@ app-gallery-button {
       height: 45%;
   
       &-wrap {
-        margin: 0 25px;
+        height: 100%;
+        padding: 11px 25px;
       }
     }
 

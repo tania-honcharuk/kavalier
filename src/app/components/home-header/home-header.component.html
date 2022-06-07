@@ -1,0 +1,8 @@
+<div [ngClass]="pageTitle !== 'Gallery' ? 'home-header__wrap' : 'home-header__wrap gallery'">
+  <h1 [ngClass]="pageTitle !== 'Gallery' ? 'home-header__title' : 'home-header__title--white'">{{ pageTitle | titlecase }}</h1>
+  <div class="home-header__nav">
+    <a [ngClass]="pageTitle !== 'Gallery' ? 'home-header__link' : 'home-header__link--white'"
+        routerLink="/home/main">HOME</a>
+    <span class="home-header__section">&nbsp;/&nbsp;{{ pageTitle | uppercase }}</span>
+  </div>
+</div>

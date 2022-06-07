@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { INFO } from './rooms';
+import { Component, Input, OnInit } from '@angular/core';
+import { InfoCard } from './info-card';
 
 @Component({
   selector: 'app-info-card',
@@ -8,7 +8,7 @@ import { INFO } from './rooms';
 })
 
 export class InfoCardComponent implements OnInit {
-  rooms = INFO;
+  @Input() items: InfoCard[] = [];
 
   constructor() { }
 
