@@ -69,11 +69,12 @@
       height: 100%;
       width: 100%;
       box-sizing: border-box;
-      border-image: linear-gradient(79deg, #fff 13%, #878787 37%, #fff 13%, #878787 37%) 1;    }
+      border-image: linear-gradient(214deg, #fff 46%, #878787 11%) 1;
+    }
 
     &::before {
       border-bottom: 1px solid $secondary;
-      border-top: 1px solid $base-light;
+      border-top: 1px solid $secondary;
     }
   
     &::after {

@@ -5,6 +5,7 @@ import { BeachComponent } from './beach.component';
 import { BeachRoutingModule } from './beach-routing.module';
 import { HomeHeaderModule } from 'src/app/components/home-header/home-header.module';
 import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
+import { HeaderModule } from 'src/app/components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
     CommonModule,
     BeachRoutingModule,
     HomeHeaderModule,
-    InfoCardModule
+    InfoCardModule,
+    HeaderModule
   ]
 })
 export class BeachModule { }

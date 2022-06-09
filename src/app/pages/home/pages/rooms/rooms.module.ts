@@ -5,6 +5,7 @@ import { RoomsRoutingModule } from './rooms-routing.module';
 import { RoomsComponent } from './rooms.component';
 import { HomeHeaderModule } from 'src/app/components/home-header/home-header.module';
 import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
+import { HeaderModule } from 'src/app/components/header/header.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
     CommonModule,
     RoomsRoutingModule,
     HomeHeaderModule,
-    InfoCardModule
+    InfoCardModule,
+    HeaderModule
   ]
 })
 export class RoomsModule { }

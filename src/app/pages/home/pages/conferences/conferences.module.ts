@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ConferencesComponent } from './conferences.component';
 import { ConferencesRoutingModule } from './conferences-routing.module';
+import { HeaderModule } from 'src/app/components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ConferencesRoutingModule } from './conferences-routing.module';
   ],
   imports: [
     CommonModule,
-    ConferencesRoutingModule
+    ConferencesRoutingModule,
+    HeaderModule
   ]
 })
 export class ConferencesModule { }

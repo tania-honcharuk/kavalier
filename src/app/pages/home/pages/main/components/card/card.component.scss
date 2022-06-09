@@ -37,9 +37,9 @@
     height: auto;
   }
 
-
-
   &__info {
+    position: relative;
+    z-index: 10;
     background: $base-light;
     padding: 5% 10% 8%;
     height: 294px;

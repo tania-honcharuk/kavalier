@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card__wrap" *ngFor="let card of blog">
+    <div class="card__img-block">
+      <img class="card__img" src="{{card.img}}" alt="">
+    </div>
+    <div class="card__info-block">
+      <h2 class="card__title">{{ card.title }}</h2>
+      <span class="card__text">{{ card.text }}</span>
+      <a class="card__link app-a" routerLink="/home/{{card.path}}">EXPLORE MORE</a>
+    </div>
+  </div>
+</div>

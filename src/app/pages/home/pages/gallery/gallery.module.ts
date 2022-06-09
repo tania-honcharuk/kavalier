@@ -5,6 +5,8 @@ import { GalleryComponent } from './gallery.component';
 import { GalleryRoutingModule } from './gallery-routing.module';
 import { HomeHeaderModule } from 'src/app/components/home-header/home-header.module';
 import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
+// import { HeaderComponent } from 'src/app/components/header/header.component';
+import { HeaderModule } from 'src/app/components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { InfoCardModule } from 'src/app/components/info-card/info-card.module';
     CommonModule,
     GalleryRoutingModule,
     HomeHeaderModule,
-    InfoCardModule
+    InfoCardModule,
+    HeaderModule
   ]
 })
 export class GalleryModule { }
