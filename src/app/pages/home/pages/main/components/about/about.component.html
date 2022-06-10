@@ -1,5 +1,29 @@
-<div class="bg" [ngClass]="bgimg01 ? 'bg02' : 'bg bg3'">
-  <button class="bg-img img-01" (click)="setBgImg()"></button>
-  <button class="bg-img img-02"></button>
-  <button class="bg-img img-03"></button>
+<div class="about__wrap"
+  [class.bg-first]="bgImgFirst"
+  [class.bg-second]="bgImgSecond"
+  [class.bg-third]="bgImgThird">
+
+  <div class="about__text-block">
+    <div class="about__change-bg">
+      <button class="about__change-btn"
+              [class.about--active]="bgImgFirst"
+              [class.about--thin]="bgImgSecond"
+              [class.about--fat]="bgImgThird"
+              (click)="setFirstImg()"></button>
+      <button class="about__change-btn" 
+              [class.about--thin]="bgImgFirst || bgImgThird" 
+              [class.about--active]="bgImgSecond" 
+              (click)="setSecondImg()"></button>
+      <button class="about__change-btn" 
+              [class.about--fat]="bgImgFirst" 
+              [class.about--thin]="bgImgSecond" 
+              [class.about--active]="bgImgThird" 
+              (click)="setThirdImg()"></button>
+    </div>
+    <h4 class="section__subtitle">Welcome  to Kavalier Boutique hotel</h4>
+    <h1 class="section__title">A New Vision of Luxury</h1>
+    <button class="app-button" (click)="goDown()">Discover more</button>
+  </div>
+  
+  <button class="about__btn" (click)="goDown()"><img class="about__move-down" src="/assets/images/icons/double-arrow.svg" alt="" ></button>
 </div>

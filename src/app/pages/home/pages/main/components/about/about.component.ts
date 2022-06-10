@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,13 +7,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  bgimg01 = false;
+  bgImgFirst = true;
+  bgImgSecond = false;
+  bgImgThird = false;
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
   }
-  setBgImg() {
-    this.bgimg01 = !this.bgimg01;
+
+  setFirstImg() {
+    this.bgImgFirst = true;
+    this.bgImgSecond = false;
+    this.bgImgThird = false;
   };
+
+  setSecondImg() {
+    this.bgImgFirst = false;
+    this.bgImgSecond = true;
+    this.bgImgThird = false;
+  };
+
+  setThirdImg() {
+    this.bgImgFirst = false;
+    this.bgImgSecond = false;
+    this.bgImgThird = true;
+  };
+
+  goDown() {
+    this.scroller.scrollToAnchor("welcome");
+  }
 }
